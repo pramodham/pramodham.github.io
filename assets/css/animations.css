@@ -1,0 +1,172 @@
+/* animations.css
+   Loads AFTER main.css and academic.css. Every effect is switched off for
+   visitors who have "reduce motion" enabled in their operating system. */
+
+/* ---------- 1. Scroll progress bar (top of the page) ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-color, #149ddd);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+/* ---------- 2. Hero: neural-network canvas ---------- */
+.hero-network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ---------- 3. Hero: one staged entrance on page load ---------- */
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero .container > h2,
+.hero .container > p,
+.hero .container > .hero-actions {
+  opacity: 0;
+  animation: heroIn 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.hero .container > h2 { animation-delay: 0.15s; }
+.hero .container > p:nth-of-type(1) { animation-delay: 0.35s; }
+.hero .container > .hero-affiliation { animation-delay: 0.55s; }
+.hero .container > .hero-actions { animation-delay: 0.75s; }
+
+/* ---------- 4. Scroll reveal (classes added by animations.js) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* tags pop in slightly faster than cards */
+.tag-list li.reveal {
+  transform: translateY(8px) scale(0.94);
+  transition-delay: calc(var(--i, 0) * 40ms);
+}
+
+.tag-list li.reveal.is-visible {
+  transform: none;
+}
+
+/* ---------- 5. Hover feedback (declared after reveal so it wins) ---------- */
+.info-card {
+  transition: opacity 0.6s ease, transform 0.25s ease, box-shadow 0.25s ease,
+    border-left-width 0.25s ease;
+}
+
+.info-card.reveal.is-visible:hover,
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  border-left-width: 8px;
+}
+
+.tag-list li {
+  transition: opacity 0.6s ease, transform 0.2s ease, background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.tag-list li.reveal.is-visible:hover,
+.tag-list li:hover {
+  transform: translateY(-2px);
+  background: var(--accent-color, #149ddd);
+  color: #fff;
+}
+
+.pub-list > li {
+  transition: opacity 0.6s ease, transform 0.25s ease;
+}
+
+.pub-list > li.reveal.is-visible:hover,
+.pub-list > li:hover {
+  transform: translateX(6px);
+}
+
+.btn-cv,
+.btn-outline-light-custom {
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-cv:hover,
+.btn-outline-light-custom:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- 6. Stats strip with count-up ---------- */
+.stats-row {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--heading-font, "Poppins", sans-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent-color, #149ddd);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* ---------- 7. Reduced motion: show everything, move nothing ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero .container > h2,
+  .hero .container > p,
+  .hero .container > .hero-actions {
+    animation: none;
+    opacity: 1;
+  }
+
+  .reveal,
+  .tag-list li.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .info-card:hover,
+  .tag-list li:hover,
+  .pub-list > li:hover,
+  .btn-cv:hover,
+  .btn-outline-light-custom:hover {
+    transform: none;
+  }
+
+  .scroll-progress,
+  .hero-network {
+    display: none;
+  }
+}

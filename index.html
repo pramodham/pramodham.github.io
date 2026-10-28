@@ -4,9 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Pramodha M - Research Scholar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Pramodha M | Assistant Professor, Department of CSE, University of Mysore</title>
+  <meta name="description"
+    content="Pramodha M is an Assistant Professor and Ph.D. research scholar in the Department of Artificial Intelligence and Data Science, School of Engineering, University of Mysore. Research: deep learning for medical imaging and agriculture, explainable AI, few-shot learning.">
+  <meta name="keywords"
+    content="Pramodha M, University of Mysore, deep learning, medical image analysis, explainable AI, few-shot learning, IoMT, IoAT, design and analysis of algorithms">
+  <meta name="author" content="Pramodha M">
+
+  <!-- Open Graph: controls how links look on LinkedIn / WhatsApp -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pramodha M | Assistant Professor, University of Mysore">
+  <meta property="og:description"
+    content="Deep learning for medical imaging and agriculture, explainable AI, and algorithms teaching.">
+  <meta property="og:image" content="assets/img/me.jpg">
+  <!-- TODO: after you publish, add <meta property="og:url" content="https://YOUR-SITE-URL/"> -->
 
   <!-- Favicons -->
   <link href="assets/img/pm.png" rel="icon">
@@ -26,43 +37,73 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS File (unchanged) -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Styles for the new academic sections (must come after main.css) -->
+  <link href="assets/css/academic.css" rel="stylesheet">
+  <!-- Animations (hero entrance, scroll reveal, hover effects) -->
+  <link href="assets/css/animations.css" rel="stylesheet">
 
-
+  <!-- Structured data so search engines understand who you are.
+       Fill in the TODO values, then remove this comment. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pramodha M",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Mysore",
+      "department": "Department of Artificial Intelligence and Data Science, School of Engineering"
+    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Mysuru", "addressRegion": "Karnataka", "addressCountry": "IN" },
+    "knowsAbout": ["Deep learning", "Medical image analysis", "Explainable AI", "Few-shot learning", "Internet of Medical Things", "Internet of Agricultural Things", "Design and analysis of algorithms"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=6Y_b6QsAAAAJ&hl=en",
+      "https://www.researchgate.net/profile/Pramodha-N-M",
+      "https://www.linkedin.com/in/pramodha-m-a183831a1",
+      "https://github.com/pramod2594"
+    ]
+  }
+  </script>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <i class="header-toggle d-xl-none bi bi-list" role="button" aria-label="Toggle navigation menu"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my_pro.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/blog.jpg" alt="Portrait of Pramodha M" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Pramodha M</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/pramodha-m-a183831a1" class="linkedin" target="_blank"><i
-          class="bi bi-linkedin"></i></a>
-      <a href="https://www.researchgate.net/profile/Pramodha-N-M" class="researchgate" target="_blank"><i
-          class="bi bi-journal-text"></i></a>
-      <a href="https://scholar.google.com/citations?user=6Y_b6QsAAAAJ&hl=en" class="google-scholar" target="_blank"><i
-          class="bi bi-google"></i></a>
-      <a href="https://github.com/pramod2594" class="github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://scholar.google.com/citations?user=6Y_b6QsAAAAJ&hl=en" class="google-scholar" target="_blank"
+        rel="noopener" aria-label="Google Scholar profile"><i class="bi bi-google"></i></a>
+      <a href="https://www.researchgate.net/profile/Pramodha-N-M" class="researchgate" target="_blank" rel="noopener"
+        aria-label="ResearchGate profile"><i class="bi bi-journal-text"></i></a>
+      <a href="https://www.linkedin.com/in/pramodha-m-a183831a1" class="linkedin" target="_blank" rel="noopener"
+        aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/pramod2594" class="github" target="_blank" rel="noopener"
+        aria-label="GitHub profile"><i class="bi bi-github"></i></a>
+      <!-- TODO: add ORCID once registered:
+      <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener" aria-label="ORCID profile"><i class="bi bi-person-badge"></i></a> -->
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#publications"><i class="bi bi-hdd-stack navicon"></i> Publications & Research</a></li>
+        <li><a href="#research"><i class="bi bi-diagram-3 navicon"></i> Research</a></li>
+        <li><a href="#publications"><i class="bi bi-journal-text navicon"></i> Publications</a></li>
+        <li><a href="#teaching"><i class="bi bi-mortarboard navicon"></i> Teaching</a></li>
+        <li><a href="#experience"><i class="bi bi-file-earmark-text navicon"></i> Experience &amp; Education</a></li>
+        <li><a href="#honors"><i class="bi bi-award navicon"></i> Honors &amp; Service</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -74,13 +115,19 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/me.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/me.jpg" alt="" data-aos="fade-in">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <h2>Pramodha M</h2>
-        <p>I'm <span class="typed" data-typed-items="Research Scholar, Developer">Designer</span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed"
+            data-typed-items="Assistant Professor, Deep Learning Researcher, Ph.D. Research Scholar">Assistant
+            Professor</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p class="hero-affiliation">Department of Artificial Intelligence and Data Science,<br>University
+          of Mysore, Karnataka, India</p>
+        <div class="hero-actions">
+          <a class="btn-cv" href="assets/files/Pramodha_M_CV.pdf" download>Download CV (PDF)</a>
+          <a class="btn-outline-light-custom" href="#publications">View publications</a>
+        </div>
       </div>
 
     </section><!-- /Hero Section -->
@@ -88,473 +135,526 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>
-          I am a resourceful professional with over 3 years of experience in machine learning research and software
-          testing.
-          I specialize in designing and optimizing deep learning models for biomedical and spectroscopic data, while
-          ensuring
-          software reliability through systematic QA processes. My work bridges the gap between AI innovation and robust
-          system
-          validation, supported by strong analytical, documentation, and collaboration skills.
+          I am an Assistant Professor in the Department of Artificial Intelligence and Data Science,
+          University of Mysore, and a Ph.D. research scholar. My research applies deep learning to medical imaging and
+          agriculture, with a focus on explainable models and learning from small datasets. I also teach Design and
+          Analysis of Algorithms.
         </p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/About.jpg" class="img-fluid" alt="Profile Image">
+            <img src="assets/img/About.jpg" class="img-fluid" alt="Pramodha M">
           </div>
           <div class="col-lg-8 content">
-            <h2>Machine Learning Researcher &amp; Software Test Engineer</h2>
+            <h2>Assistant Professor &amp; Deep Learning Researcher</h2>
             <p class="fst-italic py-3">
-              Passionate about developing intelligent systems that combine data-driven insights with practical
-              real-world
-              applications, from deep learning models to efficient testing workflows.
+              I build deep learning systems that clinicians and farmers can inspect and trust, and I teach students
+              to reason about algorithms step by step.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>–</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                    <span>https://www.linkedin.com/in/pramodha-m</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Position:</strong> <span>Assistant Professor </span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9632490110</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Department:</strong> <span>Artificial Intelligence and Data Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>School of Engineering,
+                      University of Mysore</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mysuru, Karnataka, India</span>
                   </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Ph.D.:</strong> <span>In progress :<span
+                        class="todo">Edge-IoT Based Plant Pathology Framework Using Hybrid Deep Learning
+                        Approaches</span></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Computer
                       Applications</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>pramodha9636@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>3+ Years</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><span
+                        class="todo">pramodham@compsci.uni-mysore.ac.in</span></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>ORCID:</strong> <span><span
+                        class="todo">0000-0002-4325-7135</span></span></li>
                 </ul>
               </div>
             </div>
             <p class="py-3">
-              Currently pursuing research in Internet of Medical Things (IoMT) and Internet of Agricultural Things
-              (IoAT),
-              I focus on developing intelligent systems that bridge healthcare and agricultural technologies through
-              advanced machine learning approaches. My research builds upon previous industry experience as a Project
-              Associate at CSIR-CFTRI, where I developed end-to-end ML pipelines for NIR spectroscopy data, and as a
-              Software Test Engineer at Accenture, ensuring software quality across mobile and web platforms.
-              My goal is to advance cutting-edge AI research that creates sustainable, impactful solutions in both
-              medical and agricultural domains.
+              My doctoral work sits at the meeting point of the Internet of Medical Things (IoMT) and the Internet of
+              Agricultural Things (IoAT): machine learning methods that serve both healthcare and agriculture. Before
+              joining the faculty, I worked as a Project Associate at CSIR-CFTRI, Mysuru, where I built machine learning
+              pipelines for near-infrared (NIR) spectroscopy data, and as a Software Test Engineer at Accenture, where I
+              learned how to make software dependable. Both experiences shape how I supervise projects and how I teach
+              students to test their work.
             </p>
           </div>
         </div>
 
       </div>
 
+      <div class="container stats-row" aria-label="Research at a glance">
+        <div class="row text-center gy-4">
+          <div class="col-6 col-md-3">
+            <span class="stat-number" data-count="8">8</span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-number" data-count="1">1</span>
+            <span class="stat-label">Best Paper Award</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-number" data-count="4">4</span>
+            <span class="stat-label">Ongoing research projects</span>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="stat-number" data-count="3">3</span>
+            <span class="stat-label">Papers Accepted</span>
+          </div>
+          <!-- <div class="col-6 col-md-3">
+            <span class="stat-number" data-count="3">3</span>
+            <span class="stat-label">DAA course codes taught</span>
+          </div> -->
+        </div>
+      </div>
+
     </section><!-- /About Section -->
 
+    <!-- Research Section -->
+    <section id="research" class="resume section light-background">
 
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <p>Expertise spanning machine learning, software testing, and full-stack development</p>
-      </div><!-- End Section Title -->
+        <h2>Research</h2>
+        <p>Deep learning for medical imaging and agriculture, with an emphasis on explainability and small-data
+          learning.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
-        <div class="row skills-content skills-animation">
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-6">
+            <div class="tag-group">
+              <h3>Research interests</h3>
+              <ul class="tag-list">
+                <li>Medical image analysis</li>
+                <li>Explainable AI (XAI)</li>
+                <li>Few-shot learning</li>
+                <li>Image segmentation</li>
+                <li>Plant disease detection</li>
+                <li>IoMT and IoAT</li>
+                <li>NIR spectroscopy and chemometrics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tag-group">
+              <h3>Tools and frameworks</h3>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>TensorFlow</li>
+                <li>NumPy and Pandas</li>
+                <li>scikit-learn</li>
+                <li>SQL / MySQL</li>
+                <li>C / C++</li>
+                <li>Git and GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="resume-title">Current research projects</h3>
+        <div class="row gy-4">
 
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Machine Learning</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>TensorFlow/PyTorch</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SQL/MySQL</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            <div class="info-card">
+              <h3>Explainable segmentation of white blood cells (Eff-UNet3+)</h3>
+              <span class="status">In progress</span>
+              <p>An EfficientNet-based UNet3+ model that segments white blood cells and uses explainability methods to
+                show
+                which image regions drive each prediction.</p>
+              <p class="card-links"><a href="https://github.com/pramod2594" target="_blank" rel="noopener">Code on
+                  GitHub</a></p>
+            </div>
           </div>
 
           <div class="col-lg-6">
+            <div class="info-card">
+              <h3>Few-shot blood cell classification</h3>
+              <span class="status">In progress</span>
+              <p>Prototypical Networks that classify blood cell types from only a handful of labelled images, including
+                a
+                13-class white blood cell setup with a MobileNetV4 backbone for lightweight deployment.</p>
+              <p class="card-links"><a href="https://github.com/pramod2594" target="_blank" rel="noopener">Code on
+                  GitHub</a></p>
+            </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>Software Testing</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
+          <div class="col-lg-6">
+            <div class="info-card">
+              <h3>Few-shot plant leaf disease classification</h3>
+              <span class="status">In progress</span>
+              <p>A Prototypical Network with a Swin-Tiny backbone that recognises leaf diseases (including paddy) when
+                only a few examples of each disease are available.</p>
+              <p class="card-links"><a href="https://github.com/pramod2594" target="_blank" rel="noopener">Code on
+                  GitHub</a></p>
+            </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>C/C++</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Data Analysis (Pandas/NumPy)</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
+          <div class="col-lg-6">
+            <div class="info-card">
+              <h3>Mulberry leaf image dataset for silkworm feed</h3>
+              <span class="status">Data collection</span>
+              <p>A structured image collection pipeline for mulberry leaves from the university's silkworm-feed
+                plantation,
+                covering lab, greenhouse, and field conditions, to support future leaf quality and disease models.</p>
+            </div>
           </div>
 
         </div>
 
+        <!-- <p class="mt-4 text-center small">Unpublished work is shown here only. Peer-reviewed outputs are listed under
+          Publications.</p> -->
+
       </div>
 
-    </section><!-- /Skills Section -->
+    </section><!-- /Research Section -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- News Section -->
+    <section id="news" class="section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Resourceful professional with 3+ years of experience spanning machine learning research and software testing.
-          Proven ability to bridge AI innovation and robust system validation.</p>
-      </div><!-- End Section Title -->
+        <h2>News</h2>
+      </div>
+
+      <div class="container">
+        <ul class="news-list">
+          <li><span class="news-date">2026</span><span>Paper on XAI-driven fine-tuned EfficientNetV2 for white blood
+              cell classification published in Springer CCIS (AIKP 2025).</span></li>
+          <!-- <li><span class="news-date todo">[date]</span><span class="todo">[Add your next update: new paper, talk,
+              appointment, or award.]</span></li> -->
+        </ul>
+      </div>
+
+    </section><!-- /News Section -->
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Publications</h2>
+        <p>Peer-reviewed work in deep learning, medical imaging, and explainable AI. Newest first within each group.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="pub-profiles">
+          <a href="https://scholar.google.com/citations?user=6Y_b6QsAAAAJ&hl=en" target="_blank" rel="noopener">Google
+            Scholar</a>
+          <a href="https://www.researchgate.net/profile/Pramodha-N-M" target="_blank" rel="noopener">ResearchGate</a>
+          <!-- TODO: add ORCID, Scopus, Web of Science links here -->
+          <span class="todo">0000-0002-4325-7135</span>
+          <!-- <span class="todo">[Scopus]</span> -->
+        </div>
+
+        <div class="pub-group">
+          <h3>Journal articles</h3>
+          <ol class="pub-list" reversed style="list-style:none">
+            <li>
+              A. Y. Muaad, G. Hemanth Kumar, J. Hanumanthappa, J. V. Bibal Benifa, M. Naveen Mourya, C. Chola,
+              <strong>M. Pramodha</strong>, and R. Bhairava,
+              <span class="pub-title">"An effective approach for Arabic document classification using machine
+                learning,"</span>
+              <em>Global Transitions Proceedings</em>, 2022.
+              <span class="pub-links"><a href="https://doi.org/10.1016/j.gltp.2022.03.003" target="_blank"
+                  rel="noopener">DOI: 10.1016/j.gltp.2022.03.003</a></span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="pub-group">
+          <h3>Conference papers and book chapters</h3>
+          <ol class="pub-list" style="list-style:none">
+            <li>
+              C. Chola, <strong>M. Pramodha</strong>, J. Hanumanthappa, B. Anjali, A. Y. Muaad, and A. Tiwari,
+              <span class="pub-title">"XAI-driven fine-tuned EfficientNetV2 model for white blood cell
+                classification,"</span>
+              in <em>Artificial Intelligence and Knowledge Processing (AIKP 2025)</em>, H. Kannan et al., Eds.,
+              Communications in Computer and Information Science, vol. 2804. Cham: Springer, 2026.
+              <span class="pub-links"><a href="https://doi.org/10.1007/978-3-032-14706-6_4" target="_blank"
+                  rel="noopener">DOI: 10.1007/978-3-032-14706-6_4</a></span>
+            </li>
+            <li>
+              B. Ashoka S., <strong>M. Pramodha</strong>, A. Y. Muaad, R. Nyange, A. Anusha, and N. Shilpa G.,
+              <span class="pub-title">"Explainable AI based framework for banana disease detection,"</span>
+              in <em>Proc. 5th Int. Conf. Innovative Trends in Information Technology (ICITIIT)</em>, IEEE, 2024.
+              <span class="pub-links"><a href="https://doi.org/10.1109/ICITIIT61487.2024.10580364" target="_blank"
+                  rel="noopener">DOI: 10.1109/ICITIIT61487.2024.10580364</a></span>
+            </li>
+            <li>
+              <strong>M. Pramodha</strong>, S. Ansith, J. V. B. Benifa, M. Al-Sarem, J. Hanumanthappa, A. A. Bini,
+              E. Ndagijimana, F. Saeed, M. B. B. Heyat, A. Alqarafi, A. Y. Muaad, and C. Chola,
+              <span class="pub-title">"A deep learning model for human blood cells classification,"</span>
+              in <em>Lecture Notes on Data Engineering and Communications Technologies</em>, 2023.
+              <span class="pub-links"><a href="https://doi.org/10.1007/978-3-031-36258-3_36" target="_blank"
+                  rel="noopener">DOI: 10.1007/978-3-031-36258-3_36</a></span>
+            </li>
+            <li>
+              J. Hanumanthappa, A. Y. Muaad, J. V. Bibal Benifa, C. Chola, V. Hiremath, and <strong>M.
+                Pramodha</strong>,
+              <span class="pub-title">"IoT-based smart diagnosis system for health care,"</span>
+              in <em>Sustainable Communication Networks and Application</em>. Singapore: Springer, 2021.
+              <span class="pub-links"><a href="https://doi.org/10.1007/978-981-16-6605-6_1" target="_blank"
+                  rel="noopener">DOI: 10.1007/978-981-16-6605-6_1</a></span>
+            </li>
+            <li>
+              <strong>M. Pramodha</strong>, A. Y. Muaad, J. V. Bibal Benifa, J. Hanumanthappa, C. Chola, and M. A.
+              Al-antari,
+              <span class="pub-title">"A hybrid deep learning approach for Covid-19 diagnosis via CT and X-ray medical
+                images,"</span>
+              in <em>Proc. 1st Int. Electronic Conf. on Algorithms (IOCA 2021)</em>, MDPI, 2021.
+              <strong>Best Paper Award.</strong>
+              <span class="pub-links"><a href="https://doi.org/10.3390/IOCA2021-10909" target="_blank"
+                  rel="noopener">DOI: 10.3390/IOCA2021-10909</a></span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Optional: use the same pub-group markup for "Preprints" and "Under review" when you have them. -->
+
+      </div>
+
+    </section><!-- /Publications Section -->
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Teaching</h2>
+        <p>I teach algorithms through real-life analogies, step-by-step traced examples, and pseudocode before code.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4 mb-4">
+          <div class="col-lg-6">
+            <div class="info-card">
+              <h3>Design and Analysis of Algorithms (DAA)</h3>
+              <span class="status">Undergraduate</span>
+              <p>Topics: asymptotic analysis, divide and conquer, greedy
+                methods, dynamic programming, backtracking, and branch and bound.</p>
+              <!-- <p class="card-links"><span class="todo">[link to notes / slides, if public]</span></p> -->
+            </div>
+          </div>
+          <!-- <div class="col-lg-6">
+            <div class="info-card">
+              <h3>Other courses</h3>
+              <span class="status todo">[add]</span>
+              <p class="todo">[List other courses you have taught or can teach, with level and semester.]</p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h3 class="resume-title">Teaching approach</h3>
+            <p>Students learn an algorithm best when they can see it run. Each topic starts with an everyday analogy,
+              moves to a hand-traced example on a small input, then to pseudocode, and only then to code and complexity
+              analysis. <span class="todo">[Edit this paragraph in your own words. Add 2 or 3 sentences on assessment,
+                student feedback, or outcomes if you have them.]</span></p>
+
+            <!-- <h3 class="resume-title">Student supervision</h3>
+            <p class="todo">[Add final-year projects, interns, or thesis students you have guided, with project titles.]
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Teaching Section -->
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="resume section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience &amp; Education</h2>
+      </div>
 
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Summary</h3>
+            <h3 class="resume-title">Academic and professional experience</h3>
 
-            <div class="resume-item pb-0">
-              <h4>PRAMODHA M</h4>
-              <p><em>Resourceful professional with <strong>3+ years of experience</strong> spanning <strong>machine
-                    learning research and software testing</strong>. Proven ability to design and optimize deep learning
-                  models for medical and spectroscopic data, while also excelling in QA testing across mobile and web
-                  platforms.</em></p>
+            <div class="resume-item">
+              <h4>Assistant Professor</h4>
+              <h5><span class="todo">2025</span> - Present</h5>
+              <p><em>Department of Artificial Intelligence and Data Science, University of Mysore</em>
+              </p>
               <ul>
-                <li>Mysuru, Karnataka</li>
-                <li>+91 9632490110</li>
-                <li>pramodha9636@gmail.com</li>
+                <li>Teach Design and Analysis of Algorithms</li>
+                <li>Conduct research in deep learning for medical imaging and agriculture</li>
               </ul>
-            </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Computer Applications</h4>
-              <h5>2016 - 2019</h5>
-              <p><em>Department of Studies in Computer Science, Manasagangotri, University of Mysore, Karnataka</em></p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Science</h4>
-              <h5>2011 - 2015</h5>
-              <p><em>Yuvaraja's College, University of Mysore, Karnataka</em></p>
-            </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Awards</h3>
-            <div class="resume-item">
-              <h4>Best Paper Award</h4>
-              <h5>2021</h5>
-              <p><em>The 1st International Electronic Conference on Algorithms (IOCA 2021)</em></p>
-            </div><!-- End Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            </div>
 
             <div class="resume-item">
               <h4>Project Associate</h4>
               <h5>Oct 2023 - Mar 2025</h5>
-              <p><em>CSIR-CFTRI, Mysuru</em></p>
+              <p><em>CSIR-Central Food Technological Research Institute (CFTRI), Mysuru</em></p>
               <ul>
-                <li>Led <strong>end-to-end ML pipeline</strong> for NIR spectroscopy data, covering curation,
-                  preprocessing, feature engineering, dimensionality reduction, and predictive model optimization</li>
-                <li>Partnered with chemists and researchers to embed domain knowledge into ML workflows, boosting model
-                  accuracy</li>
-                <li>Ensured reproducibility through rigorous documentation of ML processes and results</li>
+                <li>Led an end-to-end machine learning pipeline for NIR spectroscopy data: curation, preprocessing,
+                  feature engineering, dimensionality reduction, and model optimisation</li>
+                <li>Worked with chemists to build domain knowledge into the models, which improved accuracy</li>
+                <li>Documented each step so results can be reproduced</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>Software Test Engineer</h4>
               <h5>Feb 2022 - Oct 2023</h5>
               <p><em>Accenture, Bengaluru</em></p>
               <ul>
-                <li>Executed manual and automation testing across <strong>web and mobile platforms (Android, iOS,
-                    Windows, Mac)</strong></li>
-                <li>Performed regression, performance, and UAT testing in Agile project environments</li>
-                <li>Improved QA delivery by streamlining <strong>bug triaging</strong> and working directly with
-                  developers for faster fixes</li>
-                <li>Mentored junior testers on manual testing best practices and methodologies</li>
+                <li>Ran manual and automated tests on web and mobile platforms (Android, iOS, Windows, Mac)</li>
+                <li>Carried out regression, performance, and user acceptance testing in Agile teams</li>
+                <li>Streamlined bug triage with developers and mentored junior testers</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </div>
+          </div>
 
-            <h3 class="resume-title">Projects</h3>
-            <div class="resume-item">
-              <h4>COVID-19 Detection from Chest X-rays</h4>
-              <h5>2019-2020</h5>
-              <p>Built CNN-based classifier to distinguish COVID-19 cases from chest X-rays/CT scans with high accuracy.
-              </p>
-            </div><!-- End Resume Item -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
 
             <div class="resume-item">
-              <h4>Blood Cell Classification</h4>
+              <h4>Ph.D. in Computer Science (pursuing)</h4>
+              <h5><span class="todo">2025</span> - Present</h5>
+              <p><em>University of Mysore, Karnataka</em></p>
+              <p><span class="todo">Edge-IoT Based Plant Pathology Framework Using Hybrid Deep Learning
+                  Approaches</span></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Master of Computer Applications</h4>
+              <h5>2016 - 2019</h5>
+              <p><em>Department of Studies in Computer Science, Manasagangotri, University of Mysore, Karnataka</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor of Science</h4>
+              <h5>2011 - 2015</h5>
+              <p><em>Yuvaraja's College, University of Mysore, Karnataka</em></p>
+            </div>
+
+            <h3 class="resume-title">Earlier research projects</h3>
+
+            <div class="resume-item">
+              <h4>COVID-19 detection from chest X-rays and CT scans</h4>
+              <h5>2019 - 2020</h5>
+              <p>Built a CNN-based classifier that separates COVID-19 cases from other chest images. This work led to
+                the Best Paper Award at IOCA 2021.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Human blood cell classification</h4>
               <h5>2020</h5>
-              <p>Designed deep learning framework for classifying human peripheral blood cells from microscopy,
-                enhancing diagnostic efficiency.</p>
-            </div><!-- End Resume Item -->
-
+              <p>Designed a deep learning framework to classify peripheral blood cells from microscopy images.</p>
+            </div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Resume Section -->
+    </section><!-- /Experience & Education Section -->
 
+    <!-- Honors & Service Section -->
+    <section id="honors" class="section">
 
-
-    <!-- Publications & Research Section -->
-    <section id="publications" class="publications section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Publications & Research</h2>
-        <p>Research contributions in machine learning, deep learning, and computer vision applications for healthcare
-          and medical imaging</p>
-      </div><!-- End Section Title -->
+        <h2>Honors &amp; Service</h2>
+      </div>
 
       <div class="container">
-
         <div class="row gy-4">
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-journal-text"></i></div>
-            <div>
-              <h4 class="title">A Hybrid Deep Learning Approach for Covid-19 Diagnosis via CT and X-Ray Medical Images
-              </h4>
-              <p class="description"><strong>Pramodha M</strong>, Abdullah Y Muaad, Benifa Bibal J. V., Hanumanthappa
-                J., Channabasava Chola, Mugahed A Al-antari</p>
-              <p class="venue">The 1st Online Conference on Algorithms, MDPI, Switzerland, 2021</p>
-              <p class="doi">DOI: 10.3390/IOCA2021-10909</p>
-            </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Honors</h3>
+            <ul class="plain-list">
+              <li><strong>Best Paper Award, 2021.</strong> The 1st International Electronic Conference on Algorithms
+                (IOCA 2021), MDPI, for "A hybrid deep learning approach for Covid-19 diagnosis via CT and X-ray medical
+                images."</li>
+              <!-- <li class="todo">[Add grants, fellowships, scholarships, or other recognition.]</li> -->
+            </ul>
           </div>
-          <!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
-            <div>
-              <h4 class="title">IoT-Based Smart Diagnosis System for Health Care</h4>
-              <p class="description">Hanumanthappa J., Abdulla Y Muaad, Bibal Benifa J V, Channabasava Chola, Vijaylaxmi
-                Hiremath, <strong>Pramodha M</strong></p>
-              <p class="venue">Sustainable Communication Networks and Application, Springer, Singapore, 2021</p>
-              <p class="doi">DOI: 10.1007/978-981-16-6605-6_1</p>
-            </div>
-          </div><!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-translate"></i></div>
-            <div>
-              <h4 class="title">An effective approach for Arabic document classification using machine learning</h4>
-              <p class="description">Abdulla Y Muaad, G Hemanth Kumar, Hanumanthappa J., Bibal Benifa J V, M Naveen
-                Mourya, Channabasava Chola, <strong>Pramodha M</strong>, Bhairava R.</p>
-              <p class="venue">Global Transitions Proceedings, 2022</p>
-              <p class="doi">DOI: 10.1016/j.gltp.2022.03.003</p>
-            </div>
-          </div><!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-droplet"></i></div>
-            <div>
-              <h4 class="title">A deep learning model for human blood cells classification</h4>
-              <p class="description"><strong>Pramodha M</strong>, Ansith S., Benifa J. V. B., Al-Sarem M., Hanumanthappa
-                J., Bini A. A., Ndagijimana E., Saeed F., Heyat M. B. B., Alqarafi A., Muaad A. Y., & Chola C.</p>
-              <p class="venue">Lecture Notes on Data Engineering and Communications Technologies, 2023</p>
-              <p class="doi">DOI: 10.1007/978-3-031-36258-3_36</p>
-            </div>
-          </div><!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-tree"></i></div>
-            <div>
-              <h4 class="title">Explainable AI Based Framework for Banana Disease Detection</h4>
-              <p class="description">B Ashoka S., <strong>M Pramodha</strong>, Abdullah Y Muaad, Roseline Nyange, A
-                Anusha, N Shilpa G.</p>
-              <p class="venue">2024 5th International Conference on Innovative Trends in Information Technology
-                (ICITIIT), IEEE, 2024</p>
-              <p class="doi">DOI: 10.1109/ICITIIT61487.2024.10580364</p>
-            </div>
-          </div><!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-tree"></i></div>
-            <div>
-              <h4 class="title">XAI-Driven Fine-Tuned EfficientNetV2 Model for White Blood Cell Classification</h4>
-              <p class="description">C. Chola, <strong>M Pramodha</strong>, J. Hanumanthappa, B. Anjali, A.Y. Muaad, A.
-                Tiwari</p>
-              <p class="venue">In: Kannan, H., et al. Artificial Intelligence and Knowledge Processing. AIKP 2025.
-                Communications
-                in Computer and Information Science, vol 2804. Springer, Cham, 2026</p>
-              <p class="doi">DOI: <a href="https://doi.org/10.1007/978-3-032-14706-6_4" target="_blank"
-                  rel="noopener noreferrer">10.1007/978-3-032-14706-6_4</a></p>
-            </div>
-          </div><!-- End Publication Item -->
-
-          <div class="col-lg-6 col-md-6 publication-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-award"></i></div>
-            <div>
-              <h4 class="title">Best Paper Award</h4>
-              <p class="description">Recognized for outstanding research contribution at The 1st International
-                Electronic Conference on Algorithms (IOCA 2021)</p>
-              <p class="venue">MDPI, Switzerland</p>
-              <p class="doi">For work on "A Hybrid Deep Learning Approach for Covid-19 Diagnosis via CT and X-Ray
-                Medical Images"</p>
-            </div>
-          </div><!-- End Publication Item -->
-
+          <!-- <div class="col-lg-6">
+            <h3 class="resume-title">Professional service</h3>
+            <ul class="plain-list">
+              <li class="todo">[Peer review for journals or conferences]</li>
+              <li class="todo">[Conference organising or programme committees]</li>
+              <li class="todo">[Workshops, FDPs, and invited talks attended or delivered]</li>
+              <li class="todo">[Professional memberships, e.g. IEEE, ACM]</li>
+            </ul>
+          </div> -->
         </div>
-
       </div>
 
-    </section><!-- /Publications & Research Section -->
-
+    </section><!-- /Honors & Service Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Let's connect! Feel free to reach out for collaborations, research opportunities, or professional inquiries
-        </p>
-      </div><!-- End Section Title -->
+        <p>For research collaboration, student supervision, or academic enquiries, please email me.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
 
-          <div class="col-lg-5">
-
+          <div class="col-lg-6">
             <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Location</h3>
-                  <p>Mysuru, Karnataka, India</p>
-                </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Me</h3>
-                  <p>+91 9632490110</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Me</h3>
-                  <p>pramodha9636@gmail.com</p>
+                  <h3>Email</h3>
+                  <p><span class="todo">pramodham@compsci.uni-mysore.ac.in</span></p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>LinkedIn</h3>
-                  <p><a href="#" style="color: #333; text-decoration: none;">Connect on LinkedIn</a></p>
+                  <h3>Office</h3>
+                  <p>Department of Artificial Intelligence and Data Science,<br>School of Engineering, University of
+                    Mysore,<br>Mysuru, Karnataka, India
+                    <span class="pin">570006</span>
+                  </p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124741.29974165948!2d76.56098294999999!3d12.2958104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1709823456789!5m2!1sen!2sin"
-                frameborder="0" style="border:0; width: 100%; height: 270px; margin-top: 20px;" allowfullscreen=""
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="info-item d-flex">
+                <i class="bi bi-link-45deg flex-shrink-0"></i>
+                <div>
+                  <h3>Profiles</h3>
+                  <ul class="profile-links">
+                    <li><a href="https://scholar.google.com/citations?user=6Y_b6QsAAAAJ&hl=en" target="_blank"
+                        rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Pramodha-N-M" target="_blank"
+                        rel="noopener">ResearchGate</a></li>
+                    <li><a href="https://www.linkedin.com/in/pramodha-m-a183831a1" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/pramod2594" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://orcid.org/0000-0002-4325-7135" target="_blank" rel="noopener">ORCID</a></li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field"
-                    placeholder="Interested in collaborating on machine learning projects, research opportunities, or professional inquiries..."
-                    required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you! I'll get back to you soon.</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
 
         </div>
 
@@ -565,23 +665,9 @@
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
-    <!-- <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-      All the links in the footer should remain intact. 
-         You can delete the links only if you've purchased the pro version. 
-         Licensing information: https://bootstrapmade.com/license/ 
-         Purchase the pro version with working PHP/AJAX contact form: [buy-url] 
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-      </div> -->
-    </div>
-
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2024 <strong>Pramodha M</strong>. All Rights Reserved.</p>
+        <p>© 2026 <strong>Pramodha M</strong>. All rights reserved.</p>
       </div>
       <div class="credits text-center small">
         Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -590,15 +676,14 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+    aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files (php-email-form/validate.js removed: there is no form any more) -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -610,6 +695,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Animations: scroll progress, hero network, reveal, count-up -->
+  <script src="assets/js/animations.js"></script>
 
 </body>
 
