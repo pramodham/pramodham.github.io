@@ -177,13 +177,12 @@ h6 {
 } */
 
 .header .profile-img img {
-  margin: 25px auto;
   display: block;
+  margin: 25px auto;
   width: 160px;
-  height: 160px;
-  /* Added this */
+  /* height: 160px;  <-- Remove or comment this out */
+  aspect-ratio: 1 / 1; /* This forces a perfect square before the border-radius */
   object-fit: cover;
-  /* Added this to prevent stretching */
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 50%;
 }
